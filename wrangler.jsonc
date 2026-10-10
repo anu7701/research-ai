@@ -30,6 +30,13 @@
 			}
 		]
 	},
+	"workflows": [
+		{
+			"name": "research-workflow",
+			"binding": "RESEARCH_WORKFLOW",
+			"class_name": "ResearchWorkflow"
+		}
+	],
 	"migrations": [
 		{
 			"new_sqlite_classes": [

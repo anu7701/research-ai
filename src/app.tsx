@@ -488,11 +488,11 @@ function Chat() {
         <div className="max-w-3xl mx-auto flex items-center justify-between">
           <div className="flex items-center gap-3">
             <h1 className="text-lg font-semibold text-kumo-default">
-              <span className="mr-2">⛅</span>Agent Starter
+              <span className="mr-2">🔎</span>Research Assistant
             </h1>
             <Badge variant="secondary">
               <ChatCircleDotsIcon size={12} weight="bold" className="mr-1" />
-              AI Chat
+              Plan · Fetch · Cite · Remember
             </Badge>
           </div>
           <div className="flex items-center gap-3">
@@ -700,14 +700,14 @@ function Chat() {
           {messages.length === 0 && (
             <Empty
               icon={<ChatCircleDotsIcon size={32} />}
-              title="Start a conversation"
+              title="Ask a research question"
               contents={
                 <div className="flex flex-wrap justify-center gap-2">
                   {[
-                    "What's the weather in Paris?",
-                    "What timezone am I in?",
-                    "Calculate 5000 * 3",
-                    "Remind me in 5 minutes to take a break"
+                    "Research how Cloudflare Durable Objects differ from KV and save the findings",
+                    "What notes have we saved so far?",
+                    "Compare that with what we found earlier",
+                    "Start a deep research on WebAssembly on the edge"
                   ].map((prompt) => (
                     <Button
                       key={prompt}
