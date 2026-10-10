@@ -2,6 +2,15 @@
 
 An AI research agent on Cloudflare Workers. Ask a question; it plans, searches the web, reads real pages, cites sources, and saves findings to memory that persists across sessions.
 
+**Live demo:** https://super-leaf-2bec.demo7701.workers.dev/
+
+## Requirements
+
+- Node.js 20+ and npm
+- A Cloudflare account (free plan works; Workers AI and Workflows are used)
+- Wrangler logged in: `npx wrangler login` (Workers AI is called remotely, even in dev)
+- Internet access for the web search and page fetching tools
+
 ## Architecture
 
 ```
